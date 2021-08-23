@@ -1,0 +1,286 @@
+
+`timescale 1ns/ 1ps
+module tb_iir_passband;
+	reg [15:0] filter_in;
+	reg clk, reset;
+	wire [15:0] filter_out;
+
+	IIR_lowpass uut (
+		.clk(clk),
+		.reset(reset),
+		.filter_in(filter_in),
+		.filter_out(filter_out)
+		);
+		
+	initial begin
+		clk=1;
+		filter_in = 	394	;
+	end
+	always #5 clk = ~clk;
+
+	initial begin
+		
+		reset =1 ;
+		
+		#5208 reset = 0;	
+
+
+
+
+	filter_in=	493	;
+#8000	filter_in=	700	;
+#8000	filter_in=	864	;
+#8000	filter_in=	973	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	926	;
+#8000	filter_in=	789	;
+#8000	filter_in=	601	;
+#8000	filter_in=	376	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-701	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	0	;
+#8000	filter_in=	254	;
+#8000	filter_in=	493	;
+#8000	filter_in=	700	;
+#8000	filter_in=	864	;
+#8000	filter_in=	973	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	926	;
+#8000	filter_in=	789	;
+#8000	filter_in=	601	;
+#8000	filter_in=	376	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-701	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	-1	;
+#8000	filter_in=	254	;
+#8000	filter_in=	493	;
+#8000	filter_in=	700	;
+#8000	filter_in=	864	;
+#8000	filter_in=	973	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	926	;
+#8000	filter_in=	789	;
+#8000	filter_in=	601	;
+#8000	filter_in=	376	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-701	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	0	;
+#8000	filter_in=	254	;
+#8000	filter_in=	493	;
+#8000	filter_in=	700	;
+#8000	filter_in=	864	;
+#8000	filter_in=	973	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	926	;
+#8000	filter_in=	789	;
+#8000	filter_in=	601	;
+#8000	filter_in=	376	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-701	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	0	;
+#8000	filter_in=	254	;
+#8000	filter_in=	493	;
+#8000	filter_in=	700	;
+#8000	filter_in=	864	;
+#8000	filter_in=	973	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	926	;
+#8000	filter_in=	789	;
+#8000	filter_in=	601	;
+#8000	filter_in=	376	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-701	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	-1	;
+//		
+//			
+//			
+//			
+//			
+#8000	filter_in=	700	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	789	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	493	;
+#8000	filter_in=	973	;
+#8000	filter_in=	926	;
+#8000	filter_in=	376	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	254	;
+#8000	filter_in=	864	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	601	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-701	;
+#8000	filter_in=	-1	;
+#8000	filter_in=	700	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	789	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	493	;
+#8000	filter_in=	973	;
+#8000	filter_in=	926	;
+#8000	filter_in=	376	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	254	;
+#8000	filter_in=	864	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	601	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-701	;
+#8000	filter_in=	-1	;
+#8000	filter_in=	700	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	789	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	493	;
+#8000	filter_in=	973	;
+#8000	filter_in=	926	;
+#8000	filter_in=	376	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	254	;
+#8000	filter_in=	864	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	601	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-701	;
+#8000	filter_in=	0	;
+#8000	filter_in=	700	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	789	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	493	;
+#8000	filter_in=	973	;
+#8000	filter_in=	926	;
+#8000	filter_in=	376	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	254	;
+#8000	filter_in=	864	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	601	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-701	;
+#8000	filter_in=	-1	;
+#8000	filter_in=	700	;
+#8000	filter_in=	1021	;
+#8000	filter_in=	789	;
+#8000	filter_in=	128	;
+#8000	filter_in=	-602	;
+#8000	filter_in=	-1006	;
+#8000	filter_in=	-865	;
+#8000	filter_in=	-255	;
+#8000	filter_in=	493	;
+#8000	filter_in=	973	;
+#8000	filter_in=	926	;
+#8000	filter_in=	376	;
+#8000	filter_in=	-377	;
+#8000	filter_in=	-927	;
+#8000	filter_in=	-974	;
+#8000	filter_in=	-494	;
+#8000	filter_in=	254	;
+#8000	filter_in=	864	;
+#8000	filter_in=	1005	;
+#8000	filter_in=	601	;
+#8000	filter_in=	-129	;
+#8000	filter_in=	-790	;
+#8000	filter_in=	-1022	;
+#8000	filter_in=	-701	;
+
+#8000 $stop;
+	end
+endmodule
