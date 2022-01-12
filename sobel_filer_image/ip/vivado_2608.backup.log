@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov 30 13:59:45 2021
+# Process ID: 2608
+# Current directory: D:/desktop/dracaena/SpatialFilter-master/ip
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11656 D:\desktop\dracaena\SpatialFilter-master\ip\imageProcessing.xpr
+# Log file: D:/desktop/dracaena/SpatialFilter-master/ip/vivado.log
+# Journal file: D:/desktop/dracaena/SpatialFilter-master/ip\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/desktop/dracaena/SpatialFilter-master/ip/imageProcessing.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/desktop/dracaena/vivadoproject/imageprocessing'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/desktop/dracaena/vivadoproject/imageprocessing'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 852.211 ; gain = 219.461
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 30 17:18:44 2021...

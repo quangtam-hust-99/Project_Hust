@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Jan  8 10:01:31 2022
+# Process ID: 11252
+# Current directory: D:/desktop/dracaena/SpatialFilter-master/ip
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2088 D:\desktop\dracaena\SpatialFilter-master\ip\imageProcessing.xpr
+# Log file: D:/desktop/dracaena/SpatialFilter-master/ip/vivado.log
+# Journal file: D:/desktop/dracaena/SpatialFilter-master/ip\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/desktop/dracaena/SpatialFilter-master/ip/imageProcessing.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb.tcl
+add_bp {D:/desktop/dracaena/SpatialFilter-master/ip/imageProcessing.srcs/sim_1/new/tb.v} 127
+remove_bps -file {D:/desktop/dracaena/SpatialFilter-master/ip/imageProcessing.srcs/sim_1/new/tb.v} -line 127
+restart
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+restart
+run all
+relaunch_sim
+run all
+close_sim
